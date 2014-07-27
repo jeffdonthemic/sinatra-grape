@@ -19,7 +19,7 @@
 
 ## Dependencies
 
-* Ruby 2.1.2 or greater (but will probably for 1.9.x)
+* Ruby 2.1.2 or greater (but will probably work for 1.9.x)
 * Grape
 * Mongo
 * Sinatra
@@ -35,12 +35,16 @@ $ rm -r myapp/.git && rm myapp/README.md
 
 Install MongoDB if you haven't yet.
 
+```
+brew install mongodb
+```
+
 Change the settings on `config/database.yml`
 
 
 ## Test Data
 
-There's a rake task for loading test data. 
+There's a rake task for loading test data.
 
 ```bash
 rake db:seed
