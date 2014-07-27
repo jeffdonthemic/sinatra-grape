@@ -1,0 +1,22 @@
+defaults: &defaults
+  username: kat
+  password:
+  port: 27017
+
+development:
+  database: smg_development
+  host: localhost
+  <<: *defaults
+
+test:
+  database: smg_test
+  host: localhost
+  <<: *defaults
+
+production:
+  uri:
+  database: smg_production
+  host: localhost
+  username: production_username
+  password:
+  <<: *defaults
