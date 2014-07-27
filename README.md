@@ -45,6 +45,19 @@ There's a rake task for loading test data.
 rake db:seed
 ```
 
+After loading that data, you can check /api/v1/posts.
+
+Start the application:
+
+```
+shotgun config.ru
+```
+
+Use curl or probably just your browser to view the output:
+
+```
+curl http://localhost:9393/api/v1/posts
+```
 
 ## Testing
 
@@ -87,6 +100,14 @@ describe Example do
 end
 ```
 
+Use the commands:
+
+```bash
+rake test
+or
+rspec .
+```
+
 ### The Golden Rule of API Design
 
 > It’s not enough to write tests for an API you develop; you have to write unit tests for code that uses your API.
@@ -98,6 +119,12 @@ end
 
 ### Relevant Links
   * http://recipes.sinatrarb.com/p/databases/mongo
+
+### TO DO
+
+* Work on the generators to make the process less tedious.
+* Examples for POST and PATCH
+* Documentation
 
 
 ### Have any questions/ suggestions?

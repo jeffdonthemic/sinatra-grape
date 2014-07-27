@@ -3,7 +3,6 @@ source "https://rubygems.org"
 gem 'bson_ext'
 gem 'grape'
 gem 'grape-entity'
-gem 'haml'
 gem 'mongo' # You may change this to Mongoid as needed
 gem 'rake'
 gem 'sinatra'
