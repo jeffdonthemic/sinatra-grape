@@ -12,11 +12,6 @@
 * If you're writing an API implementation for various machine learning/ automation tasks, the best way is to isolate this and not make it a part of your probably bloated application
 * REST API for specific mobile applications that may or may not rely another application
 
-### The Golden Rule of API Design
-
-> It’s not enough to write tests for an API you develop; you have to write unit tests for code that uses your API.
-> Michael Feathers
-
 ## Dependencies
 
 * Ruby 2.1.2 or greater (but will probably work for 1.9.x)
@@ -53,11 +48,12 @@ rake db:seed
 
 ## Testing
 
-  We can use RSpec and Rack::Test to test the API requests.
+We can use RSpec and Rack::Test to test the API requests.
 
-  Here's an example:
+Here's an example:
 
 ```ruby
+#example.rb
 class Example < Grape::API
   prefix 'api'
   version 'v1'
@@ -67,7 +63,11 @@ class Example < Grape::API
     { hello: 'world' }
   end
 end
+```
 
+We should make sure it returns correct status code and output:
+
+```
 require 'spec_helper'
 
 describe Example do
@@ -87,6 +87,12 @@ describe Example do
 end
 ```
 
+### The Golden Rule of API Design
+
+> It’s not enough to write tests for an API you develop; you have to write unit tests for code that uses your API.
+
+> — Michael Feathers
+
 ### Documentation
 
 
@@ -97,6 +103,5 @@ end
 ### Have any questions/ suggestions/ contributions?
 
 #### Katherine Pe
-<a href='http://c.kat.pe' target='_blank'>c.kat.pe</a>
-<a href='http://google.com/+katherinepe' target='_blank'>Kat on Google+</a>
-
+* <a href='http://c.kat.pe' target='_blank'>c.kat.pe</a>
+* <a href='http://google.com/+katherinepe' target='_blank'>Kat on Google+</a>
