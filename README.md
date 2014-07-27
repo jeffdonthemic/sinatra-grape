@@ -67,7 +67,7 @@ end
 
 We should make sure it returns correct status code and output:
 
-```
+```ruby
 require 'spec_helper'
 
 describe Example do
@@ -100,7 +100,7 @@ end
   * http://recipes.sinatrarb.com/p/databases/mongo
 
 
-### Have any questions/ suggestions/ contributions?
+### Have any questions/ suggestions?
 
 #### Katherine Pe
 * <a href='http://c.kat.pe' target='_blank'>c.kat.pe</a>
