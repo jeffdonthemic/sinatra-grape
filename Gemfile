@@ -8,7 +8,6 @@ gem 'rake'
 gem 'sinatra'
 
 group :development do
-  gem 'neat'
   gem 'shotgun'
 end
 
