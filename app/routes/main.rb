@@ -11,6 +11,10 @@ class Main < Sinatra::Base
     set :db, $db
   end
 
+  enable :sessions
+  set :session_secret, settings.session_secret
+
+
   get '/' do
     "Hello world."
   end
