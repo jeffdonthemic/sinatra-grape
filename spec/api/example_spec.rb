@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe Example do
-  include Rack::Test::Methods
-
   def app
     Example
   end
